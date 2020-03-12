@@ -16,6 +16,10 @@
 		7F4635EE241A722400F50EE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4635EC241A722400F50EE2 /* LaunchScreen.storyboard */; };
 		7F4635F4241A727400F50EE2 /* HKStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4635D0241A6F8D00F50EE2 /* HKStyle.framework */; };
 		7F4635F5241A727400F50EE2 /* HKStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4635D0241A6F8D00F50EE2 /* HKStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F4635FA241A764E00F50EE2 /* HKAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4635F9241A764E00F50EE2 /* HKAlertVC.swift */; };
+		7F4635FC241A768100F50EE2 /* HKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4635FB241A768100F50EE2 /* HKTextField.swift */; };
+		7F4635FE241A771000F50EE2 /* HKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4635FD241A771000F50EE2 /* HKButton.swift */; };
+		7F463600241A778400F50EE2 /* HKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4635FF241A778400F50EE2 /* HKLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		7F4635EA241A722400F50EE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F4635ED241A722400F50EE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F4635EF241A722400F50EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4635F9241A764E00F50EE2 /* HKAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAlertVC.swift; sourceTree = "<group>"; };
+		7F4635FB241A768100F50EE2 /* HKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTextField.swift; sourceTree = "<group>"; };
+		7F4635FD241A771000F50EE2 /* HKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKButton.swift; sourceTree = "<group>"; };
+		7F4635FF241A778400F50EE2 /* HKLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				7F4635D3241A6F8D00F50EE2 /* HKStyle.h */,
 				7F4635D4241A6F8D00F50EE2 /* Info.plist */,
+				7F4635F9241A764E00F50EE2 /* HKAlertVC.swift */,
+				7F4635FB241A768100F50EE2 /* HKTextField.swift */,
+				7F4635FD241A771000F50EE2 /* HKButton.swift */,
+				7F4635FF241A778400F50EE2 /* HKLabel.swift */,
 			);
 			path = HKStyle;
 			sourceTree = "<group>";
@@ -187,6 +199,7 @@
 				TargetAttributes = {
 					7F4635CF241A6F8D00F50EE2 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					7F4635DE241A722400F50EE2 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -237,6 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4635FC241A768100F50EE2 /* HKTextField.swift in Sources */,
+				7F4635FE241A771000F50EE2 /* HKButton.swift in Sources */,
+				7F4635FA241A764E00F50EE2 /* HKAlertVC.swift in Sources */,
+				7F463600241A778400F50EE2 /* HKLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +420,7 @@
 		7F4635D9241A6F8D00F50EE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K6FA22KGKX;
@@ -419,6 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.withios.HKStyle;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,6 +446,7 @@
 		7F4635DA241A6F8D00F50EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K6FA22KGKX;
@@ -451,6 +471,7 @@
 		7F4635F1241A722400F50EE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K6FA22KGKX;
@@ -469,6 +490,7 @@
 		7F4635F2241A722400F50EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K6FA22KGKX;
